@@ -1,0 +1,1 @@
+[![Build Status](https://travis-ci.org/inadram/sample-firebase.svg?branch=master)](https://travis-ci.org/inadram/sample-firebase)
