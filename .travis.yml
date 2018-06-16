@@ -1,9 +1,6 @@
-language: node_js
-node_js:
-  - "7"
-script:
-  - echo "Deploying"
-install:
-  - npm install firebase-tools
-after_success:
-  - firebase deploy --token $FIREBASE_TOKEN
+before_deploy: "echo 'ready?'"
+deploy:
+  provider: firebase
+  token:
+    secure: "Yqt5yFsN+3BpRiVlrflejRhNpi6mTZPYKK/C3EyJU7N9hw5rFYlAF4L51zVkWS9DNWUmPhLyJSysMQRRoPnKXbCnsZAM6MroN51SsYK9ubGdYSfL2+D33cXcZrEDHPsqW2RtKRIIFkN+jctu8An8nEbmlKaqX2zAmMyUrpqqFxfRrtYCQdTPyNDDJWPyei57oBXjMfGsnHuRdAIWDOx8Q6F5F3SGDOVYaC9fJ90VYzvvR2NLTjSzy1l97QRkdPUrWOJ7Q/L9ibwBrjlzMi1mqRbLEnDIBqfs5rPZ3PvyfWqg1QSSWuJnQm1azD/Qz+NYQWV7hzl6IVzhFeJmopRpgHCa7x4Xu67gxgRcMljKAfOYuIfiiPBl02S7BZGgbnwJySa5tFfHc8UQ2/iKZrNFJ3+68P/BuWPz2LiGkVpoeys8Qu3O4U8ZqYviPAp6w2G7mo6wIU4h7S464h3m5iVAQ1xXcY4tRtwQs3TbVG0jXoakCPjaHOo9k9yBeAVbHmrck4MQYyLOLEcNyi0dEo9OSIVWWn9NiYX3c50j98wXrK/G01AFwoYIlvW3e4A53yiEVJySTQLUEqNg0rtEjdQvyXeyn7wOVVZyqA55bJXk2UfIs7PKFmhe3LlU4lrzXphggbIaFv+eyWd8aQILyncuoENVtHkYBRMnjH2YxTDXPf8="
+  project: "flickering-fire-733"
